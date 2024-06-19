@@ -601,6 +601,16 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+#resume p a {
+  display: inline-block;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
