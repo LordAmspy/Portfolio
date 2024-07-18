@@ -25,6 +25,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Lonely
@@ -637,7 +638,10 @@
           </div>
 
           <div class="col-lg-5 col-md-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form method="post" id="form" class="php-email-form">
+              <input type="hidden" name="access_key" value="f31e2861-1158-44ab-b6ce-eab1e47de2a4">
+              <input type="hidden" name="phone" value="New Submission from Web3Forms">
+              <input type="checkbox" name="botcheck" id="" style="display: none;">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
               </div>
@@ -645,17 +649,13 @@
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" required>
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
+              <div id="result"></div>
             </form>
           </div>
 
